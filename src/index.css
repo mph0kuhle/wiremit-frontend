@@ -3,8 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.bordered{
-  
+.space{
+      padding: 2%;
+    border: 1px solid grey;
+    border-radius: 25px;
 }
 
 .centered{
