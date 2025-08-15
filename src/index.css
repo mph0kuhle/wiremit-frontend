@@ -3,6 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.bordered{
+  
+}
+
+.centered{
+  display: flex;
+  justify-content:center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +24,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #3730a3 100%);
+  /*background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #3730a3 100%);*/
   min-height: 100vh;
 }
 

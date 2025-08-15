@@ -146,13 +146,6 @@ https://supreme-waffle-x5xvq76gwxp6c6rqg-8000.app.github.dev
 - **Multi-country**: Expansion to other African countries
 - **Real-time updates**: WebSocket integration for live rates
 
-## 🚀 Deployment
-
-The app is configured for deployment on Replit with:
-- Automatic dependency installation
-- Environment variable support
-- Production build optimization
-- Static file serving
 
 ### Build Process
 ```bash
