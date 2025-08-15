@@ -1,0 +1,139 @@
+~/workspace$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    modified:   .replit
+
+no changes added to commit (use "git add" and/or "git commit -a")
+~/workspace$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+    add
+~/workspace$ git add .
+~/workspace$ git commit -m "Complete Wiremit frontend implementation with auth, dashboard, and send money features"
+[main 94ff365] Complete Wiremit frontend implementation with auth, dashboard, and send money features
+ 1 file changed, 12 insertions(+)
+~/workspace$ git push origin main
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/mph0kuhle/wiremit-frontend/'
+~/workspace$ git push https://mph0kuhle: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@github.com/mph0kuhle/wiremit-frontend.git main
+Enumerating objects: 32, done.
+Counting objects: 100% (32/32), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (22/22), 17.36 KiB | 8.68 MiB/s, done.
+Total 22 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), completed with 1 local object.
+To https://github.com/mph0kuhle/wiremit-frontend.git
+   4648092..94ff365  main -> main
+~/workspace$ git add .
+~/workspace$ git commit -m 'new updates'
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+~/workspace$ git push
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/mph0kuhle/wiremit-frontend/'
+~/workspace$ git push force
+fatal: 'force' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/workspace$ git add .
+~/workspace$ git commit -m "Complete Wiremit frontend application with all React components and features"
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+~/workspace$ git push
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/mph0kuhle/wiremit-frontend/'
+~/workspace$ git push https://mph0kuhle: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@github.com/mph0kuhle/wiremit-frontend.git main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.47 KiB | 1.47 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: error: GH013: Repository rule violations found for refs/heads/main.
+remote: 
+remote: - GITHUB PUSH PROTECTION
+remote:   —————————————————————————————————————————
+remote:     Resolve the following violations before pushing again
+remote: 
+remote:     - Push cannot contain secrets
+remote: 
+remote:     
+remote:      (?) Learn how to resolve a blocked push
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push
+remote:     
+remote:     
+remote:       —— GitHub Personal Access Token ——————————————————————
+remote:        locations:
+remote:          - commit: 72b502da8ff8ac5f2e20183ea13b71ed27823ab9
+remote:            path: attached_assets/Pasted--workspace-git-status-On-branch-main-Your-branch-is-ahead-of-origin-main-by-2-commits-use-g-1755264249522_1755264249522.txt:24
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/mph0kuhle/wiremit-frontend/security/secret-scanning/unblock-secret/31KEfHNsaiuCahvyS2qHyMbI13g
+remote:     
+remote: 
+remote: 
+To https://github.com/mph0kuhle/wiremit-frontend.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/mph0kuhle/wiremit-frontend.git'
+~/workspace$ rm attached_assets/Pasted--workspace-git-status-On-branch-main-Your-branch-is-ahead-of-origin-main-by-2-commits-use-g-1755264249522_1755264249522.txt
+~/workspace$ rm -rf attached_assets/
+~/workspace$ git add .
+~/workspace$ git commit -m "Remove files containing sensitive tokens"
+[main 7b3dec3] Remove files containing sensitive tokens
+ 5 files changed, 383 deletions(-)
+ delete mode 100644 attached_assets/Pasted--workspace-git-status-On-branch-main-Your-branch-is-ahead-of-origin-main-by-2-commits-use-g-1755264249522_1755264249522.txt
+ delete mode 100644 attached_assets/Pasted-I-want-you-to-build-the-frontend-for-the-Wiremit-Send-Pocket-Money-web-app-according-to-the-techni-1755253651406_1755253651408.txt
+ delete mode 100644 attached_assets/Pasted-I-want-you-to-build-the-frontend-for-the-Wiremit-Send-Pocket-Money-web-app-according-to-the-techni-1755253725963_1755253725963.txt
+ delete mode 100644 attached_assets/Pasted-Wiremit-Frontend-Developer-Technical-Interview-Project-brief-Send-pocket-money-app-You-are-buildin-1755254125932_1755254125932.txt
+ delete mode 100644 attached_assets/Pasted-You-are-taking-over-the-Wiremit-frontend-project-The-frontend-repo-files-have-already-been-imported-1755254055841_1755254055842.txt
+~/workspace$ git push https://mph0kuhle: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@github.com/mph0kuhle/wiremit-frontend.git main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.70 KiB | 1.70 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote: error: GH013: Repository rule violations found for refs/heads/main.
+remote: 
+remote: - GITHUB PUSH PROTECTION
+remote:   —————————————————————————————————————————
+remote:     Resolve the following violations before pushing again
+remote: 
+remote:     - Push cannot contain secrets
+remote: 
+remote:     
+remote:      (?) Learn how to resolve a blocked push
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push
+remote:     
+remote:     
+remote:       —— GitHub Personal Access Token ——————————————————————
+remote:        locations:
+remote:          - commit: 72b502da8ff8ac5f2e20183ea13b71ed27823ab9
+remote:            path: attached_assets/Pasted--workspace-git-status-On-branch-main-Your-branch-is-ahead-of-origin-main-by-2-commits-use-g-1755264249522_1755264249522.txt:24
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/mph0kuhle/wiremit-frontend/security/secret-scanning/unblock-secret/31KEfHNsaiuCahvyS2qHyMbI13g
+remote:     
+remote: 
+remote: 
+To https://github.com/mph0kuhle/wiremit-frontend.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/mph0kuhle/wiremit-frontend.git'
+~/workspace$ 
