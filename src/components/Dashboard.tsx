@@ -187,7 +187,7 @@ export default function Dashboard({ user, onLogout }: DashboardProps) {
       {/* Header */}
       <div className="mb-6 flex flex-col md:flex-row justify-between items-start md:items-center">
         <div>
-          <h1 className="text-3xl font-bold text-white">Welcome back, {user.name}! 👋</h1>
+          <h1 className="text-3xl font-bold text-white">Welcome back, {user.name}!</h1>
           <p className="text-gray-300 mt-1">Here’s a snapshot of your recent activity and quick actions.</p>
         </div>
         <button
@@ -200,7 +200,7 @@ export default function Dashboard({ user, onLogout }: DashboardProps) {
 
       {/* Send Money */}
       <div className="bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-2xl mb-6">
-        <h2 className="text-2xl font-semibold text-white mb-2">💸 Send Money</h2>
+        <h2 className="text-2xl font-semibold text-white mb-2"> Send Money</h2>
         <p className="text-gray-300 text-sm mb-4">Enter an amount and see how much your recipient will receive.</p>
         <input
           type="number"
